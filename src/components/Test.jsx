@@ -2,7 +2,7 @@ import { useContext } from 'react'
 import TestContext from '../context/test/TestContext'
 
 function Test() {
-  const { state, setColor } = useContext(TestContext)
+  const { state, setColor, setText1, text } = useContext(TestContext)
 
   console.log(state)
 
@@ -22,9 +22,9 @@ function Test() {
       </button>
       <button
         className='btn btn-primary'
-        onClick={() => setColor('RED', 'Ahmed')}
+        onClick={() => setText1('Ahmed Razic')}
       >
-        {state.color}
+        {text}
       </button>
     </div>
   )
