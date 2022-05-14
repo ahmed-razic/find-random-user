@@ -4,14 +4,12 @@ const rugReducer = function (state, action) {
       return {
         ...state,
         man: action.payload,
-        users: users.push(action.payload),
         loading: false,
       }
     case 'GET_RANDOM_FEMALE':
       return {
         ...state,
         woman: action.payload,
-        users: users.push(action.payload),
         loading: false,
       }
     case 'CLEAR_USERS':
