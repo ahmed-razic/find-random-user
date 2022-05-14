@@ -2,7 +2,6 @@ import { useContext } from 'react'
 import RugContext from '../../context/rug/RugContext'
 import AlertContext from '../../context/alert/AlertContext'
 import { getRandomMale, getRandomFemale } from '../../context/rug/RugActions'
-import styled from 'daisyui/dist/styled'
 
 function UserFetch() {
   const { setAlert } = useContext(AlertContext)

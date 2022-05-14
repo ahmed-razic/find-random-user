@@ -5,12 +5,13 @@ import RugContext from '../../context/rug/RugContext'
 
 function UserResults() {
   const { randomMale, randomFemale, loading } = useContext(RugContext)
+  console.log(loading)
 
-  if (!loading) {
+  if (loading) {
     return (
       <div className='flex justify-around'>
-        <UserItem randomMale={randomMale} />
-        <UserItem randomFemale={randomFemale} />
+        <UserItem user={randomMale} />
+        <UserItem user={randomFemale} />
       </div>
     )
   } else {
