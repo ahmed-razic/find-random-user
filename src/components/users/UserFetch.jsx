@@ -1,7 +1,6 @@
 import { useContext } from 'react'
 import RugContext from '../../context/rug/RugContext'
 import { getRandomUsers } from '../../context/rug/RugActions'
-import UserResults from './UserResults'
 
 function UserFetch() {
   const { randomUsers, dispatch } = useContext(RugContext)
