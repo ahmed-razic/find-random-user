@@ -1,23 +1,22 @@
 const rugReducer = function (state, action) {
   switch (action.type) {
-    case 'GET_RANDOM_MALE':
+    case 'SET_RANDOM_MALE':
       return {
         ...state,
-        man: action.payload,
+        randomMale: action.payload,
         loading: false,
       }
-    case 'GET_RANDOM_FEMALE':
+    case 'SET_RANDOM_FEMALE':
       return {
         ...state,
-        woman: action.payload,
+        randomFemale: action.payload,
         loading: false,
       }
     case 'CLEAR_USERS':
       return {
         ...state,
-        man: [],
-        woman: [],
-        users: [],
+        randomMale: null,
+        randomFemale: null,
       }
     case 'SET_LOADING':
       return {

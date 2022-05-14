@@ -1,4 +1,10 @@
+import UserFetch from '../components/users/UserFetch'
+
 function Home() {
-  return <div>Home</div>
+  return (
+    <>
+      <UserFetch />
+    </>
+  )
 }
 export default Home

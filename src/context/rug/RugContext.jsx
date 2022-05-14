@@ -6,9 +6,8 @@ const RugContext = createContext()
 
 export const RugProvider = function ({ children }) {
   const initialState = {
-    man: {},
-    woman: {},
-    users: [],
+    randomMale: null,
+    randomFemale: null,
     loading: false,
   }
 
@@ -20,3 +19,5 @@ export const RugProvider = function ({ children }) {
     </RugContext.Provider>
   )
 }
+
+export default RugContext

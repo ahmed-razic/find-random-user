@@ -6,9 +6,9 @@ function NotFound() {
     <div className='hero'>
       <div className='text-center hero-content'>
         <div className='max-w-lg'>
-          <h1 className='text-8xl font-bold mb-8'>Oops!</h1>
-          <p className='text-5xl mb-8'>404 - Page Not Found!</p>
-          <Link className='btn btn-primary btn-lg' to='/'>
+          <h1 className='text-5xl font-bold mb-8'>Go away!</h1>
+          <p className='text-3xl mb-8'>404 - Page Not Found!</p>
+          <Link className='btn bg-green-800' to='/'>
             <FaHome className='mr-2' />
             Back To Home
           </Link>
