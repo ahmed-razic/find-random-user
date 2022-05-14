@@ -16,7 +16,6 @@
 
 <p>React.js</p>
 <p>Routes/Links/Pages</p>
-<p>Hooks (useState, useEffect, useContext)</p>
 <p>Context & Reducers</p>
 <p>Tailwind & daisyui</p>
 
