@@ -37,7 +37,6 @@ function UserFetch() {
             </button>
           </div>
         )}
-        <hr />
       </div>
     </>
   )
