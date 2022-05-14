@@ -14,19 +14,19 @@ function UserFetch() {
 
   return (
     <>
-      <div className='container mx-auto'>
+      <div className='container mx-auto mb-10'>
         <div className='flex justify-evenly mb-4'>
           <button
-            className='btn bg-indigo-700 border-none'
+            className='btn bg-indigo-700 border-none btn-wide'
             onClick={() => {
               getUsers()
             }}
           >
-            Get Random Users
+            Fetch
           </button>
         </div>
         {randomUsers.length > 0 && (
-          <div className='flex justify-center'>
+          <div className='flex justify-center mb-12'>
             <button
               className='btn bg-red-600 border-none justify-center'
               onClick={() => dispatch({ type: 'CLEAR_USERS' })}
@@ -38,6 +38,7 @@ function UserFetch() {
             </button>
           </div>
         )}
+        <hr />
       </div>
     </>
   )
