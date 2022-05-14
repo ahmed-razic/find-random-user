@@ -1,4 +1,4 @@
-export const alertReducer = function (state, action) {
+const alertReducer = function (state, action) {
   switch (action.type) {
     case 'SET_ALERT':
       return action.payload
@@ -8,3 +8,5 @@ export const alertReducer = function (state, action) {
       return state
   }
 }
+
+export default alertReducer
