@@ -29,23 +29,27 @@ function UserFetch() {
   return (
     <>
       <div className='container mx-auto'>
-        <button className='btn bg-green-800 mr-32' onClick={getMale}>
-          Get Male User
-        </button>
-        <button className='btn bg-green-800 mr-4' onClick={getFemale}>
-          Get Female User
-        </button>
-        {(randomMale || randomFemale) && (
-          <button
-            className='btn bg-red-500'
-            onClick={() => dispatch({ type: 'CLEAR_USERS' })}
-            style={{
-              visibility: randomMale || randomFemale ? 'visible' : 'hidden',
-            }}
-          >
-            Clear users
+        <div className='flex justify-evenly mb-4'>
+          <button className='btn bg-indigo-700 border-none' onClick={getMale}>
+            Random Male
           </button>
-        )}
+          <button className='btn bg-indigo-700 border-none' onClick={getFemale}>
+            Random Female
+          </button>
+        </div>
+        <div className='flex justify-center'>
+          {(randomMale || randomFemale) && (
+            <button
+              className='btn bg-red-600 border-none justify-center'
+              onClick={() => dispatch({ type: 'CLEAR_USERS' })}
+              style={{
+                visibility: randomMale || randomFemale ? 'visible' : 'hidden',
+              }}
+            >
+              Clear users
+            </button>
+          )}
+        </div>
       </div>
     </>
   )
