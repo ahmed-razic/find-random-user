@@ -4,14 +4,14 @@ import UserItem from '../users/UserItem'
 import RugContext from '../../context/rug/RugContext'
 
 function UserResults() {
-  const { randomMale, randomFemale, loading } = useContext(RugContext)
-  console.log(loading)
+  const { randomUsers, loading } = useContext(RugContext)
 
-  if (loading) {
+  if (!loading) {
     return (
-      <div className='flex justify-around'>
-        <UserItem user={randomMale} />
-        <UserItem user={randomFemale} />
+      <div className='grid grid-cols-1 gap-8 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2'>
+        {randomUsers.map((user, index) => (
+          <UserItem key={index} user={user} />
+        ))}
       </div>
     )
   } else {

@@ -16,9 +16,9 @@ function UserItem({ user: { name, location, picture, login } }) {
           <h2 className='card-title'>
             {name.first} {name.last}
           </h2>
-          <h2 className='card-title'>
+          <p>
             {location.city}, {location.state}
-          </h2>
+          </p>
           <Link
             className='text-base-content text-opacity-40'
             to={`/user/${login.uuid}`}
