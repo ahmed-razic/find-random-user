@@ -7,6 +7,7 @@ const RugContext = createContext()
 export const RugProvider = function ({ children }) {
   const initialState = {
     randomUsers: [],
+    user: {},
     loading: false,
   }
 
