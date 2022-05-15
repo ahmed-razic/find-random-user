@@ -1,6 +1,6 @@
 # Find Random User
 
-<p>Find Random User is web app done in React.js. Generates random users and display its detail info. External API to get data is <a href="https://randomuser.me/" target="_blank" rel="noopener noreferrer">randomapi</a>. It implements React concepts like Context, Reducers, fetch async/await and css library tailwind with daisyui.</p>
+<p>Find Random User is web app done in React.js. Generates random users and display its detail info. External API to get data is <a href="https://randomuser.me/" target="_blank" rel="noopener noreferrer">randomapi</a>. It implements React concepts like Context, Reducers, Routes, Fetch with Async/Await, Tailwind and DaisyUI.</p>
 
 <div><a href="https://quiet-tanuki-3399a0.netlify.app/" target="_blank" rel="noopener noreferrer"
     style="padding:0.5rem 0.7rem;
@@ -17,7 +17,8 @@
 <p>React.js</p>
 <p>Routes/Links/Pages</p>
 <p>Context & Reducers</p>
-<p>Tailwind & daisyui</p>
+<p>Fetch & Async/Await</p>
+<p>Tailwind & DaisyUI</p>
 
 ## Screenshot
 
