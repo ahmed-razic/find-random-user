@@ -10,9 +10,9 @@ function User() {
 
   useEffect(() => {
     dispatch({ type: 'SET_LOADING' })
-    const userData = getUser(randomUsers, params.id)
+    const userData = getUser(randomUsers, params.username)
     dispatch({ type: 'SET_USER', payload: userData })
-  }, [params.id, dispatch, user, randomUsers])
+  }, [params.username, dispatch, user, randomUsers])
 
   const {
     cell,

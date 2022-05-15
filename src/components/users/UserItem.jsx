@@ -21,7 +21,7 @@ function UserItem({ user: { name, location, picture, login } }) {
           </p>
           <Link
             className='text-base-content text-opacity-40'
-            to={`/user/${login.uuid}`}
+            to={`/user/${login.username}`}
           >
             Visit Profile
           </Link>

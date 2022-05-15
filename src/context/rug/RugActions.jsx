@@ -16,7 +16,7 @@ export const getRandomUsers = async () => {
   }
 }
 
-export const getUser = (randomUsers, id) => {
-  const user = randomUsers.filter((item) => item.login.uuid === id)
+export const getUser = (randomUsers, username) => {
+  const user = randomUsers.filter((item) => item.login.username === username)
   return user[0]
 }
