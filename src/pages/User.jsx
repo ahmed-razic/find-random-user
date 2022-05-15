@@ -9,15 +9,10 @@ function User() {
   const params = useParams()
 
   useEffect(() => {
-    console.log('Ahmed')
     dispatch({ type: 'SET_LOADING' })
-    const getUserData = async () => {
-      const userData = await getUser(randomUsers, params.id)
-      dispatch({ type: 'SET_USER', payload: userData })
-      console.log(user)
-    }
-    getUserData()
-  }, [params.id, dispatch, user])
+    const userData = getUser(randomUsers, params.id)
+    dispatch({ type: 'SET_USER', payload: userData })
+  }, [params.id, dispatch, user, randomUsers])
 
   const {
     cell,
@@ -104,8 +99,6 @@ function User() {
             </div>
           )}
         </div>
-
-        <div className='col-span-6'></div>
       </div>
     )
   }
